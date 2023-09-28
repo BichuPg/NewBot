@@ -21,10 +21,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6489182880:AAG_bbHf0FEL2Y4RDKrq6DVTxYb66FQ
 CACHE_TIME = int(environ.get('CACHE_TIME', 3600))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/cce1c345a4a752453a3a3.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/499d0ed233f043fe27786.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/499d0ed233f043fe27786.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/499d0ed233f043fe27786.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/499d0ed233f043fe27786.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5097048997').split()]
@@ -44,8 +44,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rrr:Rrr23@cluster0.tyzkjzz.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Popcorn")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Popcorn')
 
 #stream feature - @TeamHMT_Bots
 STREAM_BIN = environ.get("STREAM_BIN", "") #Log channel/Bin Channel id -100xxxxxxx
